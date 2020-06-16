@@ -65,7 +65,7 @@ body
 
         #sectionTwoWrapper
         {
-            border-top: none;
+            border-left: 1px solid $cc-light-gray;
         
             section#section2
             {
@@ -139,22 +139,17 @@ body
 
             section#section4
             {
-                table
-                {
-                    thead
-                    {
-                        border-bottom: 1px solid $cc-light-gray;
-                    }
+               .table-head
+               {
+                   border-bottom: 1px solid $cc-light-gray;
+                   border-right: 1px solid $cc-light-gray;
+                   @extend .font-bold;
+               }
 
-                    th, td {
-                        border-left: 1px solid $cc-light-gray;
-                        border-right: 1px solid $cc-light-gray;
-                    }
-
-                    th:first-child, td:first-child {
-                        border-left: none;
-                    }
-                }
+               .table-data
+               {
+                border-right: 1px solid $cc-light-gray;
+               }
             }
         }
     }

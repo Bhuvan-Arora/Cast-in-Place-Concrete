@@ -16,7 +16,7 @@
   font-size: 24px;
 }
 
-.font-bold {
+.font-bold, body main #sectionFourWrapper section#section4 .table-head {
   font-weight: bold;
 }
 
@@ -89,7 +89,7 @@ body main #sectionOneWrapper section#section1 #estimatedCostTxt {
 }
 
 body main #sectionTwoWrapper {
-  border-top: none;
+  border-left: 1px solid #d7d7d7;
 }
 
 body main #sectionTwoWrapper section#section2 input,
@@ -137,16 +137,12 @@ body main #sectionFourWrapper {
   background-color: #F7F8FC;
 }
 
-body main #sectionFourWrapper section#section4 table thead {
+body main #sectionFourWrapper section#section4 .table-head {
   border-bottom: 1px solid #d7d7d7;
-}
-
-body main #sectionFourWrapper section#section4 table th, body main #sectionFourWrapper section#section4 table td {
-  border-left: 1px solid #d7d7d7;
   border-right: 1px solid #d7d7d7;
 }
 
-body main #sectionFourWrapper section#section4 table th:first-child, body main #sectionFourWrapper section#section4 table td:first-child {
-  border-left: none;
+body main #sectionFourWrapper section#section4 .table-data {
+  border-right: 1px solid #d7d7d7;
 }
 /*# sourceMappingURL=cast-in-place.css.map */
