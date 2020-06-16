@@ -1,0 +1,159 @@
+@import 'global-color-constants';
+@import 'global-styles';
+
+body
+{
+    height: 100vh; //To stick footer at bottom
+    overflow-y: auto;
+    overflow-x: hidden;
+    @extend .font-md;
+
+    header
+    {
+        border-bottom: 1px solid $cc-light-gray;
+        
+        #backBtn
+        {
+            color: $cc-gray;
+            img
+            {
+                width: 1rem;
+                height: 1rem;
+            }
+            @extend .cursor-pointer;
+        }
+
+        button#addBid
+        {
+            background-color: $cc-green;
+            border-color: $cc-green;
+            border-radius: 1.25rem;
+        }
+    }
+
+    footer
+    {
+        border-top: 1px solid $cc-light-gray;
+    }
+
+    main
+    {
+        
+        #secondHalf
+        {
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        #sectionOneWrapper
+        {
+            border-bottom: 1px solid $cc-light-gray;
+            background-color: $cc-light-yellow;
+            
+            section#section1
+            {
+                #estimatedCostTxt
+                {
+                    color: $cc-gray;
+                }
+            }
+        }
+
+        #sectionTwoWrapper
+        {
+            border: 1px solid $cc-light-gray;
+            border-top: none;
+        
+            section#section2
+            {
+                input,
+                input:focus
+                {
+                    border: none;
+                    outline: none;
+                    background-color: $cc-light-green;
+                }
+
+                .form-control
+                {
+                    input
+                    {
+                        background-color: transparent;
+                    }
+                }
+
+                .box-child
+                {
+                    max-width: 50%;
+                }
+
+                .box-child:first-child
+                {
+                    border-right: 1px solid $cc-light-gray;
+                }
+
+                #totalValue
+                {
+                    max-width: 50px;
+                }
+
+                .section-child
+                {
+                    border-right: 1px solid $cc-light-gray;
+                    background-color: $cc-light-green;
+                }
+
+                .total-value
+                {
+                    background-color: $cc-medium-green;
+                }
+            }
+        }
+
+        #sectionThreeWrapper
+        {
+            section#section3
+            {
+                table
+                {
+                    thead
+                    {
+                        border-bottom: 1px solid $cc-light-gray;
+                    }
+                }
+
+                input
+                {
+                   max-width: 100px
+                }
+            }
+        }
+
+        #sectionFourWrapper
+        {
+            border-left: 1px solid $cc-light-gray;
+            background-color: $cc-light-blue;
+
+            section#section4
+            {
+                table
+                {
+                    thead
+                    {
+                        border-bottom: 1px solid $cc-light-gray;
+                    }
+
+                    th, td {
+                        border-left: 1px solid $cc-light-gray;
+                        border-right: 1px solid $cc-light-gray;
+                    }
+
+                    th:first-child, td:first-child {
+                        border-left: none;
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,48 @@
+$font-sm: 12px;
+$font-md: 14px;
+$font-lg: 24px;
+
+.flex-fill
+{
+    flex: 1 1 auto;
+}
+
+.font-sm
+{
+    font-size: $font-sm;
+}
+
+.font-md
+{
+    font-size: $font-md;
+}
+
+.font-lg
+{
+    font-size: $font-lg;
+}
+
+.font-bold
+{
+    font-weight: bold;
+}
+
+.overflow-x-auto
+{
+    overflow-x: auto;
+}
+
+.overflow-y-auto
+{
+    overflow-y: auto;
+}
+
+.cursor-pointer
+{
+    cursor: pointer;
+}
+
+.higlighted-text
+{
+    color: $cc-green;
+}

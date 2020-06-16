@@ -1,0 +1,144 @@
+.flex-fill {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.font-sm {
+  font-size: 12px;
+}
+
+.font-md, body {
+  font-size: 14px;
+}
+
+.font-lg {
+  font-size: 24px;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.cursor-pointer, body header #backBtn {
+  cursor: pointer;
+}
+
+.higlighted-text {
+  color: #57B757;
+}
+
+body {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+body header {
+  border-bottom: 1px solid #d7d7d7;
+}
+
+body header #backBtn {
+  color: #a7a7a7;
+}
+
+body header #backBtn img {
+  width: 1rem;
+  height: 1rem;
+}
+
+body header button#addBid {
+  background-color: #57B757;
+  border-color: #57B757;
+  border-radius: 1.25rem;
+}
+
+body footer {
+  border-top: 1px solid #d7d7d7;
+}
+
+body main #secondHalf {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+body main #sectionOneWrapper {
+  border-bottom: 1px solid #d7d7d7;
+  background-color: #F0F0F0;
+}
+
+body main #sectionOneWrapper section#section1 #estimatedCostTxt {
+  color: #a7a7a7;
+}
+
+body main #sectionTwoWrapper {
+  border: 1px solid #d7d7d7;
+  border-top: none;
+}
+
+body main #sectionTwoWrapper section#section2 input,
+body main #sectionTwoWrapper section#section2 input:focus {
+  border: none;
+  outline: none;
+  background-color: #F2F9F1;
+}
+
+body main #sectionTwoWrapper section#section2 .form-control input {
+  background-color: transparent;
+}
+
+body main #sectionTwoWrapper section#section2 .box-child {
+  max-width: 50%;
+}
+
+body main #sectionTwoWrapper section#section2 .box-child:first-child {
+  border-right: 1px solid #d7d7d7;
+}
+
+body main #sectionTwoWrapper section#section2 #totalValue {
+  max-width: 50px;
+}
+
+body main #sectionTwoWrapper section#section2 .section-child {
+  border-right: 1px solid #d7d7d7;
+  background-color: #F2F9F1;
+}
+
+body main #sectionTwoWrapper section#section2 .total-value {
+  background-color: #E7F5E5;
+}
+
+body main #sectionThreeWrapper section#section3 table thead {
+  border-bottom: 1px solid #d7d7d7;
+}
+
+body main #sectionThreeWrapper section#section3 input {
+  max-width: 100px;
+}
+
+body main #sectionFourWrapper {
+  border-left: 1px solid #d7d7d7;
+  background-color: #F7F8FC;
+}
+
+body main #sectionFourWrapper section#section4 table thead {
+  border-bottom: 1px solid #d7d7d7;
+}
+
+body main #sectionFourWrapper section#section4 table th, body main #sectionFourWrapper section#section4 table td {
+  border-left: 1px solid #d7d7d7;
+  border-right: 1px solid #d7d7d7;
+}
+
+body main #sectionFourWrapper section#section4 table th:first-child, body main #sectionFourWrapper section#section4 table td:first-child {
+  border-left: none;
+}
+/*# sourceMappingURL=cast-in-place.css.map */
