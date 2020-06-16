@@ -30,11 +30,13 @@ $font-lg: 24px;
 .overflow-x-auto
 {
     overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .overflow-y-auto
 {
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .cursor-pointer

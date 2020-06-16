@@ -38,16 +38,20 @@ body
 
     main
     {
-        
+        max-height: calc(100vh - 137px);
+
+        #firstHalf
+        {
+            max-height: calc(calc(100vh - 137px)/2);
+        }
         #secondHalf
         {
-            max-height: 200px;
-            overflow-y: auto;
+            max-height: calc(calc(100vh - 137px)/2);
+            border-top: 1px solid $cc-light-gray;
         }
 
         #sectionOneWrapper
         {
-            border-bottom: 1px solid $cc-light-gray;
             background-color: $cc-light-yellow;
             
             section#section1
@@ -61,7 +65,6 @@ body
 
         #sectionTwoWrapper
         {
-            border: 1px solid $cc-light-gray;
             border-top: none;
         
             section#section2

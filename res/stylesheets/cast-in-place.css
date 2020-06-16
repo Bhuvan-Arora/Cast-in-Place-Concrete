@@ -22,10 +22,12 @@
 
 .overflow-x-auto {
   overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .overflow-y-auto {
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .cursor-pointer, body header #backBtn {
@@ -65,13 +67,20 @@ body footer {
   border-top: 1px solid #d7d7d7;
 }
 
+body main {
+  max-height: calc(100vh - 137px);
+}
+
+body main #firstHalf {
+  max-height: calc(calc(100vh - 137px)/2);
+}
+
 body main #secondHalf {
-  max-height: 200px;
-  overflow-y: auto;
+  max-height: calc(calc(100vh - 137px)/2);
+  border-top: 1px solid #d7d7d7;
 }
 
 body main #sectionOneWrapper {
-  border-bottom: 1px solid #d7d7d7;
   background-color: #F0F0F0;
 }
 
@@ -80,7 +89,6 @@ body main #sectionOneWrapper section#section1 #estimatedCostTxt {
 }
 
 body main #sectionTwoWrapper {
-  border: 1px solid #d7d7d7;
   border-top: none;
 }
 
