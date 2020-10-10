@@ -5,6 +5,8 @@ This repository is created for practice purpose, Just playing with scrolling con
 Supported Views : Development done considering desktop view only, But this is taken care that things should not break in responsive view as well.  
 Supported Browsers : Stable Version of Google Chrome and Microsoft Edge
 
+Live Demo : https://castinplaceconcrete.netlify.app/
+
 # How to run
 > Download or Clone the repository  
 > Open index.html file in supported browser  
