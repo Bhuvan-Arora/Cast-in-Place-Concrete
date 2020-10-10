@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Cast-in-place CSS-->
+    <link rel="stylesheet" href="stylesheets/cast-in-place.css" />
+    <title>
+        Cast in Place Concrete
+    </title>
+</head>
+
+
+
+<body class="d-flex flex-column">
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between align-items-center py-3">
+                    <div id="backBtn" class="font-sm d-flex align-items-center">
+                        <img src="assets/left-arrow.svg" alt="Back Icon" class="src">
+                        <span class="pl-2">BACK TO PHASES</span>
+                    </div>
+                    <div class="font-bold font-lg px-3">
+                        <span>033003 - </span>
+                        <span class="higlighted-text">Cast-in-Place Concrete</span>
+                    </div>
+                    <div>
+                        <button id="addBid" class="btn btn-success px-3 font-md">+ ADD MORE BID</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container-fluid flex-fill">
+        <div class="row overflow-y-auto" id="firstHalf">
+            <div class="col-12 col-md-6" id="sectionOneWrapper">
+                <section id="section1" class="d-flex py-5 h-100 align-items-center flex-column">
+                    <span class="font-bold font-lg mb-2">TOTAL ESTIMATE</span>
+                    <input type="text" class="w-50 mb-2 p-2">
+                    <div class="">
+                        <input type="checkbox" class="">
+                        <span id="estimatedCostTxt" class="font-bold">Use Estimate Cost</span>
+                    </div>
+                </section>
+            </div>
+            <div class="col-12 col-md-6" id="sectionTwoWrapper">
+                <section id="section2">
+                    <div class="row font-sm">
+                        <div class="col-4 py-3 section-child">
+                            <div class="mb-3">
+                                <label class="font-bold text-uppercase">Company Name</label><br>
+                                <input type="text" placeholder="eg BTS Ltd Company">
+                            </div>
+                            <div class="mb-3">
+                                <label class="font-bold text-uppercase">Contact</label><br>
+                                <input type="number" placeholder="eg 0000000000">
+                            </div>
+                            <div class="mb-3">
+                                <label class="font-bold text-uppercase">Email</label><br>
+                                <input type="number" placeholder="eg test@test.com">
+                            </div>
+                            <hr>
+                            <div class="form-control font-md mb-3">
+                                <label class="font-bold text-uppercase font-sm">Basic Bid</label><br>
+                                <input type="number" placeholder="000000">
+                            </div>
+                            <div class="form-control d-flex font-md mb-3">
+                                <div class="d-flex flex-column box-child mr-1">
+                                    <label class="font-bold text-uppercase font-sm">Bond Rate</label>
+                                    <div class="d-flex align-items-center">
+                                        <input type="checkbox" class="mr-2">
+                                        <input type="number" placeholder="0000">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column box-child ml-1">
+                                    <label class="font-bold text-uppercase font-sm">Basic Cost</label>
+                                    <input type="text" placeholder="000000">
+                                </div>
+                            </div>
+                            <div class="form-control d-flex font-md total-value">
+                                <div class="d-flex justify-content-between w-100 align-items-center">
+                                    <span class="font-bold higlighted-text text-uppercase">Total</span>
+                                    <input type="number" id="totalValue" placeholder="000000">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 py-3 section-child">
+                            <div class="mb-3">
+                                <label class="font-bold text-uppercase">Company Name</label><br>
+                                <input type="text" placeholder="eg BTS Ltd Company">
+                            </div>
+                            <div class="mb-3">
+                                <label class="font-bold text-uppercase">Contact</label><br>
+                                <input type="number" placeholder="eg 0000000000">
+                            </div>
+                            <div class="mb-3">
+                                <label class="font-bold text-uppercase">Email</label><br>
+                                <input type="number" placeholder="eg test@test.com">
+                            </div>
+                            <hr>
+                            <div class="form-control font-md mb-3">
+                                <label class="font-bold text-uppercase font-sm">Basic Bid</label><br>
+                                <input type="number" placeholder="000000">
+                            </div>
+                            <div class="form-control d-flex font-md mb-3">
+                                <div class="d-flex flex-column box-child mr-1">
+                                    <label class="font-bold text-uppercase font-sm">Bond Rate</label>
+                                    <div class="d-flex align-items-center">
+                                        <input type="checkbox" class="mr-2">
+                                        <input type="number" placeholder="0000">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column box-child ml-1">
+                                    <label class="font-bold text-uppercase font-sm">Basic Cost</label>
+                                    <input type="text" placeholder="000000">
+                                </div>
+                            </div>
+                            <div class="form-control d-flex font-md total-value">
+                                <div class="d-flex justify-content-between w-100 align-items-center">
+                                    <span class="font-bold higlighted-text text-uppercase">Total</span>
+                                    <input type="number" id="totalValue" placeholder="000000">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 py-3 section-child">
+                            <div class="mb-3">
+                                <label class="font-bold text-uppercase">Company Name</label><br>
+                                <input type="text" placeholder="eg BTS Ltd Company">
+                            </div>
+                            <div class="mb-3">
+                                <label class="font-bold text-uppercase">Contact</label><br>
+                                <input type="number" placeholder="eg 0000000000">
+                            </div>
+                            <div class="mb-3">
+                                <label class="font-bold text-uppercase">Email</label><br>
+                                <input type="number" placeholder="eg test@test.com">
+                            </div>
+                            <hr>
+                            <div class="form-control font-md mb-3">
+                                <label class="font-bold text-uppercase font-sm">Basic Bid</label><br>
+                                <input type="number" placeholder="000000">
+                            </div>
+                            <div class="form-control d-flex font-md mb-3">
+                                <div class="d-flex flex-column box-child mr-1">
+                                    <label class="font-bold text-uppercase font-sm">Bond Rate</label>
+                                    <div class="d-flex align-items-center">
+                                        <input type="checkbox" class="mr-2">
+                                        <input type="number" placeholder="0000">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column box-child ml-1">
+                                    <label class="font-bold text-uppercase font-sm">Basic Cost</label>
+                                    <input type="text" placeholder="000000">
+                                </div>
+                            </div>
+                            <div class="form-control d-flex font-md total-value">
+                                <div class="d-flex justify-content-between w-100 align-items-center">
+                                    <span class="font-bold higlighted-text text-uppercase">Total</span>
+                                    <input type="number" id="totalValue" placeholder="000000">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="row overflow-y-auto" id="secondHalf">
+            <div class="col-12 col-md-6 p-0" id="sectionThreeWrapper">
+                <section id="section3">
+                    <table class="w-100">
+                        <thead>
+                            <tr>
+                                <th class="p-2 pl-3">Scope List</th>
+                                <th class="p-2">QTY</th>
+                                <th class="p-2">Unit</th>
+                                <th class="p-2">$/Unit</th>
+                                <th class="p-2 pr-3">Cost</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="p-2 pl-3">
+                                    <input type="text" value="Spread Foot">
+                                </td>
+                                <td class="p-2">
+                                    <input type="text" value="10">
+                                </td>
+                                <td class="p-2">
+                                    <input type="text" value="UA">
+                                </td>
+                                <td class="p-2">
+                                    <input type="text" value="$100">
+                                </td>
+                                <td class="p-2 pr-3">
+                                    <input type="text" value="$10000">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 pl-3">
+                                    <input type="text" value="Piers">
+                                </td>
+                                <td class="p-2">
+                                    <input type="text" value="20">
+                                </td>
+                                <td class="p-2">
+                                    <input type="text" value="LA">
+                                </td>
+                                <td class="p-2">
+                                    <input type="text" value="$100">
+                                </td>
+                                <td class="p-2 pr-3">
+                                    <input type="text" value="$20000">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 pl-3">
+                                    <input type="text" value="Void Forms">
+                                </td>
+                                <td class="p-2">
+                                    <input type="text" value="10">
+                                </td>
+                                <td class="p-2">
+                                    <input type="text" value="LA">
+                                </td>
+                                <td class="p-2">
+                                    <input type="text" value="$300">
+                                </td>
+                                <td class="p-2 pr-3">
+                                    <input type="text" value="$30000">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 pl-3">
+                                    <input type="text" value="Spread Foot">
+                                </td>
+                                <td class="p-2">
+                                    <input type="text" value="10">
+                                </td>
+                                <td class="p-2">
+                                    <input type="text" value="UA">
+                                </td>
+                                <td class="p-2">
+                                    <input type="text" value="$100">
+                                </td>
+                                <td class="p-2 pr-3">
+                                    <input type="text" value="$10000">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 pl-3">
+                                    <input type="text" value="Piers">
+                                </td>
+                                <td class="p-2">
+                                    <input type="text" value="20">
+                                </td>
+                                <td class="p-2">
+                                    <input type="text" value="LA">
+                                </td>
+                                <td class="p-2">
+                                    <input type="text" value="$100">
+                                </td>
+                                <td class="p-2 pr-3">
+                                    <input type="text" value="$20000">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 pl-3">
+                                    <input type="text" value="Void Forms">
+                                </td>
+                                <td class="p-2">
+                                    <input type="text" value="10">
+                                </td>
+                                <td class="p-2">
+                                    <input type="text" value="LA">
+                                </td>
+                                <td class="p-2">
+                                    <input type="text" value="$300">
+                                </td>
+                                <td class="p-2 pr-3">
+                                    <input type="text" value="$30000">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+            <div class="col-12 col-md-6 p-0" id="sectionFourWrapper">
+                <section id="section4">
+                    <div class="d-flex overflow-x-auto">
+                        <div class="col-4 p-0">
+                            <div class="d-flex align-items-center justify-content-between p-2 pl-3 table-head">
+                                <span>Cost</span>
+                                <div class="d-flex align-items-center">
+                                    <input type="checkbox" class="mr-2">
+                                    <span>Selected</span>
+                                </div>
+                            </div>
+                            <div class="p-2 pl-3 table-data">
+                                <input type="text">
+                            </div>
+                            <div class="p-2 pl-3 table-data">
+                                <input type="text">
+                            </div>
+                            <div class="p-2 pl-3 table-data">
+                                <input type="text">
+                            </div>
+                            <div class="p-2 pl-3 table-data">
+                                <input type="text">
+                            </div>
+                            <div class="p-2 pl-3 table-data">
+                                <input type="text">
+                            </div>
+                            <div class="p-2 pl-3 table-data">
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="col-4 p-0">
+                            <div class="d-flex align-items-center justify-content-between p-2 table-head">
+                                <span>Cost</span>
+                                <div class="d-flex align-items-center">
+                                    <input type="checkbox" class="mr-2">
+                                    <span>Selected</span>
+                                </div>
+                            </div>
+                            <div class="p-2 table-data">
+                                <input type="text">
+                            </div>
+                            <div class="p-2 table-data">
+                                <input type="text">
+                            </div>
+                            <div class="p-2 table-data">
+                                <input type="text">
+                            </div>
+                            <div class="p-2 table-data">
+                                <input type="text">
+                            </div>
+                            <div class="p-2 table-data">
+                                <input type="text">
+                            </div>
+                            <div class="p-2 table-data">
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="col-4 p-0">
+                            <div class="d-flex align-items-center justify-content-between p-2 table-head">
+                                <span>Cost</span>
+                                <div class="d-flex align-items-center">
+                                    <input type="checkbox" class="mr-2">
+                                    <span>Selected</span>
+                                </div>
+                            </div>
+                            <div class="p-2 table-data">
+                                <input type="text">
+                            </div>
+                            <div class="p-2 table-data">
+                                <input type="text">
+                            </div>
+                            <div class="p-2 table-data">
+                                <input type="text">
+                            </div>
+                            <div class="p-2 table-data">
+                                <input type="text">
+                            </div>
+                            <div class="p-2 table-data">
+                                <input type="text">
+                            </div>
+                            <div class="p-2 table-data">
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="col-4 p-0">
+                            <div class="d-flex align-items-center justify-content-between p-2 table-head">
+                                <span>Cost</span>
+                                <div class="d-flex align-items-center">
+                                    <input type="checkbox" class="mr-2">
+                                    <span>Selected</span>
+                                </div>
+                            </div>
+                            <div class="p-2 table-data">
+                                <input type="text">
+                            </div>
+                            <div class="p-2 table-data">
+                                <input type="text">
+                            </div>
+                            <div class="p-2 table-data">
+                                <input type="text">
+                            </div>
+                            <div class="p-2 table-data">
+                                <input type="text">
+                            </div>
+                            <div class="p-2 table-data">
+                                <input type="text">
+                            </div>
+                            <div class="p-2 table-data">
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="col-4 p-0">
+                            <div class="d-flex align-items-center justify-content-between p-2 pr-3 table-head">
+                                <span>Cost</span>
+                                <div class="d-flex align-items-center">
+                                    <input type="checkbox" class="mr-2">
+                                    <span>Selected</span>
+                                </div>
+                            </div>
+                            <div class="p-2 pr-3 table-data">
+                                <input type="text">
+                            </div>
+                            <div class="p-2 pr-3 table-data">
+                                <input type="text">
+                            </div>
+                            <div class="p-2 pr-3 table-data">
+                                <input type="text">
+                            </div>
+                            <div class="p-2 pr-3 table-data">
+                                <input type="text">
+                            </div>
+                            <div class="p-2 pr-3 table-data">
+                                <input type="text">
+                            </div>
+                            <div class="p-2 pr-3 table-data">
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between align-items-center py-3">
+                    <div class="left-btn-pane">
+                        <span class="higlighted-text font-bold">+ ADD MORE SCOPE</span>
+                    </div>
+                    <div class="right-btn-pane">
+                        <button id="updateBtn" class="btn btn-success px-5 font-md">UPDATE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
